@@ -33,6 +33,7 @@ void menu() {
   }
 }
 
+// Grava os dados da API, caso os atuais estejam desatualizados (de dias anteriores), ou não existam
 registerData() async {
   var hgData = await getData();
   dynamic fileData = readFile();
@@ -68,7 +69,8 @@ registerData() async {
   }
 }
 
-readFile() {
+// Retorna uma String com o conteúdo do arquivo de dados
+String readFile() {
   Directory dir = Directory.current;
   File file = File(dir.path + '/dadosMoedas.txt');
 
@@ -89,6 +91,7 @@ today() async {
   print('${data['date']} -> ${data['data']}');
 }
 
+// Acessa a api da HG Brasil para e extrai os dados das cotações
 Future getData() async {
   // Link da api que será acessada
   String url = 'https://api.hgbrasil.com/finance?key=28a5a045';
@@ -124,6 +127,7 @@ Future getData() async {
   }
 }
 
+// Retorna a data atual formatada
 now(){
   var now = DateTime.now();
   return '${now.day.toString().padLeft(2, '0')}/${now.month.toString().toString().padLeft(2, '0')}/${now.year.toString().padLeft(2, '0')}';
