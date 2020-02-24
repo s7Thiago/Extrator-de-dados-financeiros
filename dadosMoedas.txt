@@ -1,1 +1,5 @@
-[{"date":"24/02/2020","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.676 |Argentine Peso : 0.0711 |Bitcoin : 44719.313 |"}]
+[
+{"date":"22/02/2020","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.676 |Argentine Peso : 0.0711 |Bitcoin : 44719.313 |"},
+{"date":"23/02/2020","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.676 |Argentine Peso : 0.0711 |Bitcoin : 44719.313 |"},
+{"date":"24/02/2020","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.676 |Argentine Peso : 0.0711 |Bitcoin : 44719.313 |"}
+]

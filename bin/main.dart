@@ -12,6 +12,7 @@ void menu() {
 
   print('1 - Ver cotação de hoje');
   print('2 - Registrar a cotação de hoje');
+  print('3 - Ver cotações registradas');
 
   //? Armazenando opção escolhida pelo usuário através do teclado
   String option = stdin.readLineSync();
@@ -24,6 +25,10 @@ void menu() {
 
     case 2:
       registerData();
+      break;
+
+    case 3:
+      listData();
       break;
 
     default:
@@ -39,34 +44,47 @@ registerData() async {
   dynamic fileData = readFile();
 
 //  Se o arquivo tiver algo salvo, transforma em um objeto a partir do json, se não, retorna uma lista vazia.
-  fileData = (fileData != null && fileData.length > 0? json.decode(fileData) : List());
+  fileData = (fileData != null && fileData.length > 0
+      ? json.decode(fileData)
+      : List());
 
   bool fileExists = false;
 
-  fileData.forEach((ocurrencies){
-
+  fileData.forEach((ocurrencies) {
     print(ocurrencies['date']);
 
-    if(ocurrencies['date'] == now())
-      fileExists = true;
+    if (ocurrencies['date'] == now()) fileExists = true;
   });
 
-  if(!fileExists) {
+  if (!fileExists) {
     fileData.add({"date": now(), "data": "${hgData['data']}"});
 
 //    Preparando para salvar o arquivo
-  Directory dir = Directory.current;
-  File file = File(dir.path + '/dadosMoedas.txt');
-  RandomAccessFile raf = file.openSync(mode: FileMode.write);
+    Directory dir = Directory.current;
+    File file = File(dir.path + '/dadosMoedas.txt');
+    RandomAccessFile raf = file.openSync(mode: FileMode.write);
 
-  raf.writeStringSync(json.encode(fileData).toString());
-  raf.flushSync();
-  raf.closeSync();
+    raf.writeStringSync(json.encode(fileData).toString());
+    raf.flushSync();
+    raf.closeSync();
 
-  print('######################## Dados Salvos Com Sucesso!!! ########################');
+    print(
+        '######################## Dados Salvos Com Sucesso!!! ########################');
   } else {
-    print('######################## Registro não adicionado. Já existem dados de hoje no arquivo ########################');
+    print(
+        '######################## Registro não adicionado. Já existem dados de hoje no arquivo ########################');
   }
+}
+
+listData() {
+  dynamic fileData = readFile();
+  fileData = (fileData != null && fileData.length > 0
+      ? json.decode(fileData)
+      : List());
+  print("\n\n###################### Listagem dos dados ######################");
+  fileData.forEach((data){
+    print('${data['date']} -> ${data['data']}');
+  });
 }
 
 // Retorna uma String com o conteúdo do arquivo de dados
@@ -74,8 +92,9 @@ String readFile() {
   Directory dir = Directory.current;
   File file = File(dir.path + '/dadosMoedas.txt');
 
-  if(!file.existsSync()) {
-    print('Arquivo ${file.path.split('\\')[file.path.split('\\').length - 1]} não encontrado');
+  if (!file.existsSync()) {
+    print(
+        'Arquivo ${file.path.split('\\')[file.path.split('\\').length - 1]} não encontrado');
   }
 
   return file.readAsStringSync();
@@ -114,12 +133,11 @@ Future getData() async {
 //  Colocando os dados das moedas em um Map
     Map formatedMap = Map();
     formatedMap['date'] = now();
-    formatedMap['data'] =
-        '${usd['name']} : ${usd['buy']} | '
-        '${eur['name']} : ${eur['buy']} |'
-        '${gbp['name']} : ${gbp['buy']} |'
-        '${ars['name']} : ${ars['buy']} |'
-        '${btc['name']} : ${btc['buy']} |';
+    formatedMap['data'] = '${usd['name']} : ${usd['buy']} | '
+        '${eur['name']} : ${eur['buy']} | '
+        '${gbp['name']} : ${gbp['buy']} | '
+        '${ars['name']} : ${ars['buy']} | '
+        '${btc['name']} : ${btc['buy']} | ';
 
     return formatedMap;
   } else {
@@ -128,7 +146,7 @@ Future getData() async {
 }
 
 // Retorna a data atual formatada
-now(){
+now() {
   var now = DateTime.now();
   return '${now.day.toString().padLeft(2, '0')}/${now.month.toString().toString().padLeft(2, '0')}/${now.year.toString().padLeft(2, '0')}';
 }
