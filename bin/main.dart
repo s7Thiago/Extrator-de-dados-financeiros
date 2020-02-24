@@ -42,8 +42,11 @@ registerData() async {
 
   bool fileExists = false;
 
-  fileData.forEach((data){
-    if(data['date'] == now())
+  fileData.forEach((ocurrencies){
+
+    print(ocurrencies['date']);
+
+    if(ocurrencies['date'] == now())
       fileExists = true;
   });
 
@@ -72,6 +75,8 @@ readFile() {
   if(!file.existsSync()) {
     print('Arquivo ${file.path.split('\\')[file.path.split('\\').length - 1]} não encontrado');
   }
+
+  return file.readAsStringSync();
 }
 
 // Retorna a cotação do dia de hoje
