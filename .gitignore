@@ -11,4 +11,4 @@ build/
 doc/api/
 
 #intelliJ files
-.idea
+.idea/
