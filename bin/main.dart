@@ -120,5 +120,6 @@ Future getData() async {
 }
 
 now(){
-  return DateTime.now().toString().split(' ')[0];
+  var now = DateTime.now();
+  return '${now.day.toString().padLeft(2, '0')}/${now.month.toString().toString().padLeft(2, '0')}/${now.year.toString().padLeft(2, '0')}';
 }

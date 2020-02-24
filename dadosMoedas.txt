@@ -1,1 +1,1 @@
-[{"date":"2020-02-24","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.6703 |Argentine Peso : 0.0711 |Bitcoin : 44869.635 |"}]
+[{"date":"24/02/2020","data":"Dollar : 4.3932 | Euro : 4.7664 |Pound Sterling : 5.6738 |Argentine Peso : 0.0711 |Bitcoin : 44753.634 |"}]

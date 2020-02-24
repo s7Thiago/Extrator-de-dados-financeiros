@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5642ea2-6e85-47a2-a3c0-71baa61cac2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dadosMoedas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dadosMoedas.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,23 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+            <state relative-caret-position="775">
+              <caret line="123" column="136" lean-forward="true" selection-start-line="123" selection-start-column="136" selection-end-line="123" selection-end-column="136" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dadosMoedas.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-end-column="137" />
             </state>
           </provider>
         </entry>
@@ -141,11 +134,11 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="bottom" id="Dart Analysis" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5898235" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.031152649" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Flutter Performance" order="5" side_tool="true" />
@@ -166,7 +159,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-      <window_info anchor="right" id="Run" order="11" visible="true" weight="0.38646054" />
+      <window_info active="true" anchor="right" id="Run" order="11" visible="true" weight="0.38646054" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -177,10 +170,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/main.dart">
+    <entry file="file://$PROJECT_DIR$/.history/bin/main_20200224112345.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.history/bin/main_20200224114249.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.history/bin/main_20200224121459.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -190,7 +200,17 @@
     <entry file="file://$PROJECT_DIR$/dadosMoedas.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="16" lean-forward="true" selection-end-column="137" />
+          <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="123" column="136" lean-forward="true" selection-start-line="123" selection-start-column="136" selection-end-line="123" selection-end-column="136" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
